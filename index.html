@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://img.icons8.com/dotty/80/4a90e2/circled-s.png" rel="shortcut icon" type="image/x-icon" />
+
+    <title>Samuel Donkor</title>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="content">
+      <div class="center">
+        <img
+          class="profile-img center"
+          src="assets/images/myimage.jpg"
+          alt=""
+        />
+      </div>
+
+      <h1 class="center title">Samuel Donkor</h1>
+
+      <div class="tab center">
+        <button
+          class="tablinks btn-color"
+          onclick="openCity(event, 'Home')"
+          id="defaultOpen"
+        >
+          Home
+        </button>
+        <button
+          class="tablinks btn-color"
+          onclick="openCity(event, 'Projects')"
+        >
+          Projects
+        </button>
+        <button
+          class="tablinks btn-color"
+          onclick="javascript:window.open('https://medium.com/@samadon', '_blank');"
+        >
+          Blog
+        </button>
+
+        <button
+          class="tablinks btn-color"
+          onclick="javascript:window.open('https://github.com/samadon1', '_blank');"
+        >
+          Github
+        </button>
+        <button
+          class="tablinks btn-color"
+          onclick="javascript:window.open('https://www.linkedin.com/in/samdon/', '_blank');"
+        >
+          LinkedIn
+        </button>
+      </div>
+
+      <div id="Home" class="tabcontent">
+        <h2>Hi there! 👋🏽</h2>
+        <p>
+          I'm Samuel, a Computer Science student at KNUST interested in building
+          efficient software systems to deliver social good. When I'm not
+          coding, I make videos on
+          <a
+            class="link"
+            href="https://www.youtube.com/channel/UCARA-U9LHEddJuuJbVn3QEA"
+            target="_blank"
+            >YouTube</a
+          >
+          on topics that interest me, from AI to astrophotography. You can check
+          out my astrophotography collection <a class="link" href="">here</a>.
+        </p>
+
+        <p>
+          Previously, I've led the   <a class="link"  href="https://developers.google.com/community/gdsc" target="_blank" >Google Developer Student Clubs(GDSC)</a>   chapter
+          at my university, helping expose students to programming through
+          in-person events, study jams and hackathons. At the moment, I'm a
+          student ambassador for
+          <a class="link" href="https://huggingface.co/" target="_blank" >HuggingFace</a> ,
+          teaching machine learning to students on my campus. I'm also a lead
+          for the School of Groups(SoG) at the Computer Science Society
+          teaching web programming. 
+        </p>
+
+        <p>
+          Contact me at <a class="link" href="mailto: sdamankwah@st.knust.edu.gh">sdamankwah@st.knust.edu.gh</a>
+        </p>
+      </div>
+
+      <div id="Projects" class="tabcontent">
+        <h2 class="center">Projects ⚙️</h2>
+        <div class="card">
+          <img class="thumb" src="assets/images/website.png" alt="">
+          <h3>Portfolio Website</h3>
+          <p>
+            I created my own portfolio website using HTML, CSS and JavaScript. You're on the website right now. 
+            In an effort to showcase my personal projects cohesively, I decided to make my own portfolio website (the one you’re on right now!).
+
+              <p><a class="link"href="" target="_blank" >View source</a></p> 
+          </p>
+        </div>
+        <div class="card">
+          <img class="thumb" src="assets/images/nlp-project.png" alt="">
+          <h3>English-Twi Translator</h3>
+          <p>
+            Twi translator is a machine translation app that generates translations of
+            never-before-seen real-world input sentences from English to Twi. I implemented the model from scratch by training a 
+            sequence-to-sequence transformer in Python
+              <p><a class="link"href="https://github.com/samadon1/English-to-Twi-Translator" target="_blank" >View source</a></p> 
+          </p>
+        </div>
+        <div class="card">
+          <img class="thumb" src="assets/images/library.png" alt="">
+          <h3>Local Library</h3>
+          <p>
+            Local library is a website that manages the catalog for a local library. The website provides an online catalog 
+            for a small local library, 
+            where users can browse available books, reserve books and manage their accounts
+              <p><a class="link"href="https://github.com/samadon1/locallibrary" target="_blank" >View source</a></p> 
+          </p>
+        </div>
+        
+        <div class="card">
+          <img class="thumb" src="assets/images/sensor.png" alt="">
+          <h3>Digital Distance Meter</h3>
+          <p>
+            Digital distance meter is  a non-contact distance measurement app thats uses an ultrasonic sensor to measure the distance of target objects. 
+            The sensor data is sent over a realtime database which is then accessed abd displayed by the app
+              <p><a class="link"href="https://github.com/samadon1/Digital-distance-meter" target="_blank" >View source</a></p> 
+          </p>
+        </div>
+        <br>
+
+        <p>See more of my projects on <a  class="link" href="https://github.com/samadon1" target="_blank">GitHub</a>.</p>
+      </div>
+
+      <div id="Blog" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+
+      <p class="center" >Built from scratch with ❤️ by yours truly. 
+        <!-- Design inspired by  <a class="link" href="https://brianyu.me/" target="_blank"> Brian Yu</a>  -->
+      </p>
+
+      <script type="text/javascript" src="particles.js"></script>
+      <script type="text/javascript" src="app.js"></script>
+
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(
+              " active",
+              ""
+            );
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+      </script>
+    </div>
+  </body>
+</html>
