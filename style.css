@@ -19,13 +19,13 @@ body {
     background-color: #1A1A1A;
     color: white;
     font-family: 'Poppins', sans-serif;
-  
+
 
 }
 
 ::-webkit-scrollbar {
     display: none;
-  }
+}
 
 
 
@@ -45,8 +45,13 @@ p {
     justify-content: center
 }
 
+.link:hover {
+    color: wheat;
+}
+
 .link {
     text-decoration: none;
+
     color: rgb(0, 238, 218)
 }
 
@@ -66,7 +71,7 @@ p {
 
 /* Style the tab */
 .tab {
-    overflow: hidden;
+    /* overflow: hidden; */
     /* border: 1px solid #ccc; */
     /* background-color: #f1f1f1; */
 }
@@ -104,4 +109,29 @@ p {
 
 .btn-color {
     color: rgba(255, 255, 255, 0.315);
+}
+
+
+@media only screen and (max-width: 562px) {
+    
+
+    body {
+        /* background-color: lightblue; */
+        
+      }
+
+      .content {
+        padding: 1% 10%;
+      }
+
+      .thumb {
+        width: 100%;
+      }
+
+      .tab {
+        overflow-x: auto;
+        width: 100%;
+        padding-left: 50px ;
+      }
+
 }
