@@ -1,182 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://img.icons8.com/dotty/80/4a90e2/circled-s.png" rel="shortcut icon" type="image/x-icon" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
 
-    <title>Samuel Donkor</title>
-  </head>
-  <body>
-    <div id="particles-js"></div>
-    <div class="content">
-      <div class="center">
-        <img
-          class="profile-img center"
-          src="assets/images/myimage.jpg"
-          alt=""
-        />
-      </div>
+<body>
 
-      <h1 class="center title">Samuel Donkor</h1>
+    <div class="sidebar-content">
 
-      <div class="tab center">
-        <button
-          class="tablinks btn-color"
-          onclick="openCity(event, 'Home')"
-          id="defaultOpen"
-        >
-          Home
-        </button>
-        <button
-          class="tablinks btn-color"
-          onclick="openCity(event, 'Projects')"
-        >
-          Projects
-        </button>
-        <button
-          class="tablinks btn-color"
-          onclick="javascript:window.open('https://github.com/samadon1', '_blank');"
-        >
-          Github
-        </button>
-        <button
-          class="tablinks btn-color"
-          onclick="javascript:window.open('https://www.linkedin.com/in/samdon/', '_blank');"
-        >
-          LinkedIn
-        </button>
-        <button
-          class="tablinks btn-color"
-          onclick="javascript:window.open('https://medium.com/@samadon', '_blank');"
-        >
-          Blog
-        </button>
-      </div>
+        <div class="sidebar">
+            <div id="particles-js"></div>
+            <div class="sidebar-index">
+                <div class="sidebar-bio">
+                    <div class="sidebar-bio-text">
+                        <h1>Samuel Donkor</h1>
+                        <img class="sidebar-profile" src="images/profile.jpeg" alt="">
+                        <p>Software Engineer</p>
+                    </div>
+                </div>
 
-      <div id="Home" class="tabcontent">
-        <h2>Hi there! 👋🏽</h2>
-        <p>
-          I'm Samuel, a Computer Science student at KNUST interested in building
-          efficient software systems to deliver social good. When I'm not
-          coding, I make videos on
-          <a
-            class="link"
-            href="https://www.youtube.com/channel/UCARA-U9LHEddJuuJbVn3QEA"
-            target="_blank"
-            >YouTube</a
-          >
-          on topics that interest me, from AI to astrophotography. You can check
-          out my astrophotography collection <a class="link" href="">here</a>.
-        </p>
+                <div class="tab">
+                    <button  class="tablinks" id="defaultOpen" onclick="openCity(event, 'Home')">Home</button>
+                    <br>
+                    <a href="#Projects"><button  class="tablinks" onclick="openCity(event, 'Projects')">Projects</button></a>
+                    <br>
+                    <a href="#Teaching"><button class="tablinks" onclick="openCity(event, 'Teaching')">Teaching</button></a>
+                    <br>
+                    <a href="#Entrepreneurship"><button class="tablinks" onclick="openCity(event, 'Entrepreneurship')">Entrepreneurship</button></a>
+                    <br>
+                    <a href="#Publications"><button class="tablinks" onclick="openCity(event, 'Publications')">Publications</button></a>
+                    <br>
+                    <!-- <button class="tablinks" onclick="openCity(event, 'Home')">Press</button> -->
+                    <br>
+                </div>
+            </div>
 
-        <p>
-          Previously, I've led the   <a class="link"  href="https://developers.google.com/community/gdsc" target="_blank" >Google Developer Student Clubs(GDSC)</a>   chapter
-          at my university, helping expose students to programming through
-          in-person events, study jams and hackathons. At the moment, I'm a
-          student ambassador for
-          <a class="link" href="https://huggingface.co/" target="_blank" >HuggingFace</a> ,
-          teaching machine learning to students on my campus. I'm also a lead
-          for the School of Groups(SoG) at the Computer Science Society
-          teaching web programming. 
-        </p>
+            <div>
 
-        <p>
-          Contact me at <a class="link" href="mailto: sdamankwah@st.knust.edu.gh">sdamankwah@st.knust.edu.gh</a>
-        </p>
-      </div>
-
-      <div id="Projects" class="tabcontent">
-        <h2 class="center">Projects ⚙️</h2>
-        <div class="card">
-          <img class="thumb" src="assets/images/website.png" alt="">
-          <h3>Portfolio Website</h3>
-          <p>
-            I created my own portfolio website using HTML, CSS and JavaScript. You're on the website right now. 
-            In an effort to showcase my personal projects cohesively, I decided to make my own portfolio website (the one you’re on right now!).
-
-              <p><a class="link"href="" target="_blank" >View source</a></p> 
-          </p>
+            </div>
         </div>
-        <div class="card">
-          <img class="thumb" src="assets/images/nlp-project.png" alt="">
-          <h3>English-Twi Translator</h3>
-          <p>
-            Twi translator is a machine translation app that generates translations of
-            never-before-seen real-world input sentences from English to Twi. I implemented the model from scratch by training a 
-            sequence-to-sequence transformer in Python
-              <p><a class="link"href="https://github.com/samadon1/English-to-Twi-Translator" target="_blank" >  View source</a></p> 
-          </p>
+
+
+        <div>
+            <div class="content">
+                <div id="Home" class="tabcontent">
+                    <h1>Samuel Donkor</h1>
+                    <img class="profile" src="images/profile.jpeg" alt="">
+                    <p>email: sdamankwah@st.knust.edu.gh</p>
+                    <p>department: Computer Science</p>
+                    <div>
+                        <a href="https://github.com/samadon1">Github</a> //
+                        <a href="https://www.linkedin.com/in/samdon/">LinkedIn</a> //
+                        <a href="https://www.youtube.com/channel/UCARA-U9LHEddJuuJbVn3QEA">YouTube</a> //
+                        <a href="">google scholar</a>
+                    </div>
+                    <h1>Bio</h1>
+                    <p>I am a Computer Science student at <a href="https://www.knust.edu.gh/">Kwame Nkrumah University
+                            of Science and Technology</a> interested in building efficient software systems
+                        to deliver social good. Currently, I'm working with <a
+                            href="https://webapps.knust.edu.gh/staff/dirsearch/profile/summary/4e75f7db861e.html">Dr.
+                            Emmanuel Ahene</a> to develop novel Deep Learning models and Privacy-preserving methods to
+                        consolidate and manage data to advance the health care domain. </p>
+
+                    <p>In my free time , I develop and implement key algorithms and data structures targeted for
+                        analyzing real genomes and DNA sequencing datasets.</p>
+                    <div class="external-content">
+                        <div class="external-content-card">
+                            <p class="external-content-card-tile">Projects</p>
+                            <img class="external-content-image" src="images/sgd.jpg" alt="">
+                            <p>Some of my recent projects</p>
+                            <button onclick="openCity(event, 'Projects')" class="btn"> Read more</button>
+                        </div>
+                        <div class="external-content-card">
+                            <p class="external-content-card-tile">Teaching</p>
+                            <img class="external-content-image" src="images/teach.png" alt="">
+                            <p>Courses, students, & mentorship</p>
+                            <button onclick="openCity(event, 'Teaching')" class="btn">Read more</button>
+                        </div>
+                        <div class="external-content-card">
+                            <p class="external-content-card-tile">Entrepreneurship</p>
+                            <img class="external-content-image" src="images/chronos.webp" alt="">
+                            <p>Startups, initiatives, & innovations</p>
+                            <button onclick="openCity(event, 'Entrepreneurship')" class="btn">Read more</button>
+                        </div>
+
+                        <div class="external-content-card">
+                            <p class="external-content-card-tile">Publications</p>
+                            <img class="external-content-image" src="images/research.jpg" alt="">
+                            <p>My latest published research</p>
+                            <button onclick="openCity(event, 'Publications')" class="btn">Read more</button>
+                        </div>
+                    </div>
+
+                    <h1>News</h1>
+                    <div class="news-item">
+                        <div>Sept <br> 2022</div>
+                        <div>
+                            🏆 Awarded a grant with <a href="https://rail.knust.edu.gh/rail-impact-projects/">@RAIL</a>
+                            to help the hearing and speech-impaired access healthcare using machine learning.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="Projects" class="tabcontent ">
+                    <h1>Projects</h1>
+                    <p>I build impactful and efficient software systems to deliver social good. Here are a few of my most recent projects.
+                        
+                        <hr>
+                        <div>
+                            <h3>
+                                SignTalk - Sign Language Translation
+                            </h3>
+                            <img class="project-images" src="images/signtalk.png" alt="">
+                            <p>
+                                SignTalk is sign language translation system that allows deaf and dumb patients to
+                                communicate effectively with their doctors by using the power of computer vision and
+                                deep learning. It is capable of both translation of speech-to-sign-language and
+                                sign-language-to-speech.
+                            </p>
+                            <a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSfuPSGEr2RTLviG-d6wk82e19OW2cLMQzsyM-ABfAKCsnnCpA/viewform"><button
+                                    class="btn"> View source</button></a>
+
+                            <hr>
+                        </div>
+                        <div>
+                            <h3>
+                                Ultrasonic Digital distance meter
+                            </h3>
+                            <img class="project-images" src="images/sensor.png" alt="">
+                            <p>
+                                Digital distance meter is a non-contact distance measurement app thats uses an
+                                ultrasonic sensor to measure the distance of target objects. The sensor data is sent
+                                over a realtime database which is then accessed and displayed by the app
+                            </p>
+                            <a href="https://github.com/samadon1/Digital-distance-meter"><button class="btn"> View
+                                    source</button></a>
+
+                            <hr>
+                        </div>
+
+                        <div>
+                            <h3>
+                                Healthcare acccessibility Map App
+                            </h3>
+                            <img class="project-images" src="images/map.png" alt="">
+                            <p>
+                                The healthcare accessibility map app computes the approximate travel time from every
+                                point to the nearest hospital (darker is longer) in Ghana.
+                            </p>
+                            <a href="https://calvinsamueldonkor.users.earthengine.app/view/healthcareaccessibility"><button
+                                    class="btn"> View source</button></a>
+
+                            <hr>
+                        </div>
+
+                        <div>
+                            <h3>
+                                Healthcare acccessibility Map App
+                            </h3>
+                            <img class="project-images" src="images/guidestarimg.png" alt="">
+                            <p>
+                                This project connects donors and grantmakers to non-profit organizations. A platform to
+                                list verified NGOs/non-profit organizations in Ghana. The ultimate goals of this
+                                project is to
+
+                                verify NGOs operating in Ghana,
+                                expose verified NGOs to donors and volunteers looking,
+                                give donors/individuals conducting due diligence on a non-profit organization a way to
+                                do so seamlessly on the platform
+                            </p>
+                            <a href="https://calvinsamueldonkor.users.earthengine.app/view/healthcareaccessibility"><button
+                                    class="btn"> View source</button></a>
+
+                            <hr>
+                        </div>
+
+                        <div>
+                            <h3>
+                                English-Twi Translator
+                            </h3>
+                            <img class="project-images" src="images/nlp.png" alt="">
+                            <p>
+                                Twi translator is a machine translation app that generates translations of
+                                never-before-seen real-world input sentences from English to Twi. I implemented the
+                                model from scratch by training a sequence-to-sequence transformer in Python
+                            </p>
+                            <a href="https://github.com/samadon1/English-to-Twi-Translator"><button class="btn"> View
+                                    source</button></a>
+
+                            <hr>
+                        </div>
+                        <div>
+                            <h3>
+                                Heart MRI Image Segmentation
+                            </h3>
+                            <img class="project-images" src="images/mri.png" alt="">
+                            <p>
+                                The aim of this project is to build a predictive model that could classify each pixel in
+                                a cardiac MRI image based on whether the pixel is a part of the left ventricle (LV) or
+                                not. In medical imagery analysis it is often important to separate the pixels
+                                corresponding to different types of tissue, blood or abnormal cells so that we can
+                                isolate a particular organ. In this project I used the TensorFlow machine learning
+                                framework to train and evaluate an image segmentation network using a medical imagery
+                                dataset.
+                            </p>
+                            <a href="https://github.com/samadon1/heartmri"><button class="btn"> View
+                                    source</button></a>
+
+                            <hr>
+                        </div>
+                        <div>
+                            <h3>
+                                Land-Cover-Classification
+                            </h3>
+                            <img class="project-images" src="images/landcover.png" alt="">
+                            <p>
+                                This project introduces an example of a supervised land cover classification with
+                                Sentinel-2 data. The aim is to classify a Sentinel-2 image into four different land
+                                cover classes: water surfaces, artificial surfaces, low vegetation and tree cover.
+                            </p>
+                            <a href="https://github.com/samadon1/Land-Cover-Classification"><button class="btn"> View
+                                    source</button></a>
+
+                            <hr>
+                        </div>
+                        <div>
+                            <h3>
+                                Local Library Website
+                            </h3>
+                            <img class="project-images" src="images/locallib.png" alt="">
+                            <p>
+                                This platform manages the catalog for a local library. The website provides an online
+                                catalog for a small local library, where users can browse available books, reserve books
+                                and manage their accounts
+                            </p>
+                            <a href="https://github.com/samadon1/locallibrary"><button class="btn"> View
+                                    source</button></a>
+
+                            <hr>
+                        </div>
+                    </p>
+                </div>
+
+                <div id="Teaching" class="tabcontent ">
+                    <h1>Teaching & Leadership</h1>
+                    <p>In addition to research and building impactful projects, I am passionate about education and
+                        leadership, and strive to help and empower others to excel in their own pursuits.</p>
+                    <hr>
+                    <div class="sidebar-content">
+                        <div>
+                            <img class="external-content-image" src="images/gdsc.jpeg" alt="">
+                        </div>
+                        <div>
+                            <h4>Google Developer Student Clubs, Campus Lead</h4>
+                            <p>Organized and led 2-hour weekly sessions for 240+ college students that focused on
+                                exposure to programming through in-person events, study jams and hackathons</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-content">
+                        <div>
+                            <img class="external-content-image"
+                                src="data:image/png;base64,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"
+                                alt="">
+                        </div>
+                        <div>
+                            <h4>College of Science, School of Groups, Lead</h4>
+                            <p>Bridging the gap between theory and practice for students through weekly workshops and
+                                hackathons.</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-content">
+                        <div>
+                            <img class="external-content-image" src="images/youtubethumb.png" alt="">
+                        </div>
+                        <div>
+                            <h4>YouTube, Content Creator</h4>
+                            <p> I make videos on <a
+                                    href="https://www.youtube.com/channel/UCARA-U9LHEddJuuJbVn3QEA">Youtube</a> on
+                                topics that interest me, from Algorithms to AI to astrophotography</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-content">
+                        <div>
+                            <img class="external-content-image" src="images/ml.jpeg" alt="">
+                        </div>
+                        <div>
+                            <h4>Google Explore ML, Facilitator</h4>
+                            <p>Teaching Machine Learning to members in my community and beyond, through high-impact
+                                workshops.</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-content">
+                        <div>
+                            <img class="external-content-image" src="images/te.jpeg" alt="">
+                        </div>
+                        <div>
+                            <h4>TechElevate, Instructor & Mentor 2021-Present</h4>
+                            <p>Offering programming workshops and mentorship to aspiring developers and students in
+                                Ghana, Africa.</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-content">
+                        <div>
+                            <img class="external-content-image"
+                                src="data:image/jpeg;base64,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"
+                                alt="">
+                        </div>
+                        <div>
+                            <h4>HuggingFace, Student Ambassador</h4>
+                            <p>Teaching open-source machine learning to people from all kinds of backgrounds and showing
+                                my campus community how to build ML models with HuggingFace</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="Entrepreneurship" class="tabcontent ">
+                    <h1>Entrepreneurship</h1>
+                    <p>I am passionate about bringing breakthrough technological innovations that I create into the
+                        world, in order to positively impact our society and move humanity forward.</p>
+
+                    <hr>
+                    <div>
+                        <h3>
+                            <a class="link-colour" href="https://github.com/samadon1/chronos_health">Chronos Health</a>
+                        </h3>
+                        <img class="entre-image" src="images//chronos.webp" alt="">
+                        <p>
+                            A dedicated real-time engagement platform and remote patient monitoring mobile app that
+                            connects community health workers to health experts for medical advice and help doctors
+                            diagnose, treat and give proper medical advice to seniors, pregnant women, and mothers.
+                        </p>
+                    </div>
+                    <br>
+                    <div>
+                        <h3>
+                            <a class="link-colour"
+                                href="https://play.google.com/store/apps/details?id=com.wTekMart_14929896&hl=en_US&gl=US">TekMart</a>
+                        </h3>
+                        <img src="images//tekmart.jpeg" alt="">
+                        <p>
+                            Empowering student business owners to make and showcase their products using technology
+                        </p>
+                    </div>
+
+
+                </div>
+
+                <div id="Publications" class="tabcontent ">
+                    <h1>Publications</h1>
+                    <p>New publications coming soon !</p>
+                </div>
+
+                <div id="Press" class="tabcontent ">
+                    <h1>Press</h1>
+                    <p>A collection of some of the news articles, TV interviews, and documentaries about my work</p>
+                </div>
+
+            </div>
+
+
+
+
+
         </div>
-        <div class="card">
-          <img class="thumb" src="assets/images/library.png" alt="">
-          <h3>Local Library</h3>
-          <p>
-            Local library is a website that manages the catalog for a local library. The website provides an online catalog 
-            for a small local library, 
-            where users can browse available books, reserve books and manage their accounts
-              <p><a class="link"href="https://github.com/samadon1/locallibrary" target="_blank" >View source</a></p> 
-          </p>
-        </div>
-       
-        
-        <div class="card">
-          <img class="thumb" src="assets/images/sensor.png" alt="">
-          <h3>Digital Distance Meter</h3>
-          <p>
-            Digital distance meter is  a non-contact distance measurement app thats uses an ultrasonic sensor to measure the distance of target objects. 
-            The sensor data is sent over a realtime database which is then accessed and displayed by the app
-              <p><a class="link"href="https://github.com/samadon1/Digital-distance-meter" target="_blank" >View source</a></p> 
-          </p>
-        </div>
-        <div class="card">
-          <img class="thumb" src="assets/images/astrogal.png" alt="">
-          <h3>AstroGallery</h3>
-          <p>
-          AstroGallery is a website that lets you search for images of galaxies and stars.
-              <p><a class="link"href="https://github.com/samadon1/AstroGallery" target="_blank" > View source</a> <a  class="link" href="https://astrogallery.netlify.app/" target="_blank" > &nbsp Visit site</a> </p> 
-          </p>
-        </div>
-        <br>
+    </div>
 
-        <p>See more of my projects on <a  class="link" href="https://github.com/samadon1" target="_blank">GitHub</a>.</p>
-      </div>
 
-      <div id="Blog" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
 
-      <p class="center" >Built from scratch with ❤️ by yours truly. 
-        <!-- Design inspired by  <a class="link" href="https://brianyu.me/" target="_blank"> Brian Yu</a>  -->
-      </p>
 
-      <script type="text/javascript" src="particles.js"></script>
-      <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 
-      <script>
+    <script>
         function openCity(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(
-              " active",
-              ""
-            );
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
         }
 
         document.getElementById("defaultOpen").click();
-      </script>
-    </div>
-  </body>
+    </script>
+</body>
+
 </html>

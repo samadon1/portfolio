@@ -1,102 +1,180 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Abril+Fatface'); */
 
 #particles-js {
     position: absolute;
+    z-index: 0;
     width: 100%;
     height: 100%;
     background-image: url('');
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    overflow: hidden;
+    clip: rect(0px, 400px, 100vh, 0px);
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.sidebar-content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.profile {
+    width: 200px;
+}
+
+
+
+.external-content {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+    justify-content: center;
+    text-align: center;
+}
+
+.external-content div p {
+    text-align: center;
+}
+
+.external-content-card {
+    margin: 20px;
+
+}
+
+.external-content-card-tile {
+    font-weight: 600;
+}
+
+
+.external-content-image {
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.news-item {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.btn {
+    padding: 10px 24px;
+    border-radius: 24px;
+    border: 1px solid rgba(128, 128, 128, 0.281);
+    color: rgb(127, 178, 255);
+    transition-duration: 0.8s;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: rgb(127, 178, 255);
+    /* Green */
+    color: white;
+}
+
+
+.sidebar {
+    background: rgb(56, 56, 56);
+    background: linear-gradient(148deg, rgba(56, 56, 56, 1) 0%, rgba(0, 0, 0, 1) 88%);
+    padding: 0 15%;
+    height: 100vh;
+    overflow-y: scroll;
+    height: auto;
+
+    /* position: relative; */
+
+}
+
+.sidebar h1 {
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.sidebar-profile {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+}
+
+
+.sidebar-bio div p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+
+
+}
+
+
+
+.sidebar-bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.sidebar-index {
+    position: relative;
+    z-index: 1;
 }
 
 .content {
-    position: relative;
-    padding: 1% 24%;
-}
-
-body {
-    background-color: #1A1A1A;
-    color: white;
-    font-family: 'Poppins', sans-serif;
+    padding: 100px;
+    /* overflow-y: scroll; height:100vh; */
+    /* overflow: hidden;  */
 
 
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
-
-
-p {
-    font-size: 14px
-}
-
-
-.profile-img {
-    border-radius: 50%;
-    width: 140px;
-}
-
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-.link:hover {
-    color: wheat;
-}
-
-.link {
-    text-decoration: none;
-
-    color: rgb(0, 238, 218)
-}
-
-.title {
-    margin-top: 10px;
-}
-
-.card {
-    padding: 20px 20px;
-    margin-top: 40px;
-    box-shadow: 0 8px 16px 0 rgba(255, 239, 96, 0.05);
-}
-
-.thumb {
-    width: 650px;
-}
-
-/* Style the tab */
 .tab {
+    display: inline-block;
+
     /* overflow: hidden; */
     /* border: 1px solid #ccc; */
     /* background-color: #f1f1f1; */
+
 }
 
-/* Style the buttons inside the tab */
 .tab button {
+    font-size: 18px;
+}
+
+.tab button {
+    color: white;
     background-color: inherit;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 14px 24px;
     transition: 0.3s;
-    font-size: 17px;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: black;
-    color: rgb(0, 238, 218)
+    /* background-color: #ddd; */
+    text-decoration: underline;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
     /* background-color: #ccc; */
+    font-weight: bold;
 }
 
 /* Style the tab content */
@@ -107,31 +185,111 @@ p {
     border-top: none;
 }
 
-.btn-color {
-    color: rgba(255, 255, 255, 0.315);
+.link-colour {
+    color: rgb(127, 178, 255);
+    text-decoration: none;
+}
+
+.project-images {
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px #464646);
+    filter: drop-shadow(5px 5px 5px #464646);
+}
+
+.entre-image {
+    width: 400px;
 }
 
 
 @media only screen and (max-width: 562px) {
+
+    .sidebar-content {
+        display: inline;
+
+    }
+
+    .content {
+        padding: 50px;
+        /* overflow-y: scroll; height:100vh; */
+        /* overflow: hidden;  */
+
+
+    }
+
+    .external-content {
+        display: inline;
+        /* grid-template-columns: 25% 25% 25% 25%;
+    
+        justify-content: center;
+        text-align: center; */
+    }
+
+    .external-content-image {
+        height: 200px;
+        width: 250px;
+        border-radius: 10px;
+    }
+
+    #particles-js {
+        position: absolute;
+        z-index: 0;
+        width: 80%;
+        height: 100%;
+        background-image: url('');
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        clip: rect(0px, 300px, 100vh, 0px);
+    }
+
+    .tab {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .news-item {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
+    .tab {
+    /* float: right; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .tab {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tab button {
+        padding: 5px 24px;
+        
+    }
+
+     .external-content-image {
+        /* height: 200px; */
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .project-images {
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+
+    .entre-image {
+        width: 200px;
+    }
     
 
-    body {
-        /* background-color: lightblue; */
-        
-      }
-
-      .content {
-        padding: 1% 1%;
-      }
-
-      .thumb {
-        width: 100%;
-      }
-
-      .tab {
-        overflow-x: auto;
-        width: 100%;
-        padding-left: 50px ;
-      }
+    
 
 }
