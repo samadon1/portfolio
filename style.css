@@ -204,6 +204,10 @@ body {
 
 
 @media only screen and (max-width: 562px) {
+    
+    .sidebar {
+        height: 100vh
+    }
 
     .sidebar-content {
         display: inline;
